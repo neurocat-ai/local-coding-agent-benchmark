@@ -1,0 +1,13 @@
+phase,run_id,task,model,quantization,shell,autonomous_seconds,total_acceptance_seconds,functional_feedback_cycles,hygiene_feedback_cycles,ttft_seconds,generation_tokens_per_second,peak_vram_mib,autonomous_correctness,final_correctness,final_tests,verdict
+main,qwen-q8-erp001-a1,ERP-001,Qwen3.6-35B-A3B,Q8_0,Qwen Code,118,1762,4,0,0.199,102.558,38621,5,5,passed,accepted_after_feedback_4
+main,qwen-q8-erp003-a1,ERP-003,Qwen3.6-35B-A3B,Q8_0,Qwen Code,184,184,0,0,N/A,N/A,N/A,5,5,passed,accepted_without_feedback
+main,qwen-q8-erp004-a1,ERP-004,Qwen3.6-35B-A3B,Q8_0,Qwen Code,300,300,0,0,0.215,116.202,38621,5,5,passed,accepted_without_feedback
+main,gptoss120-erp001-a1,ERP-001,gpt-oss-120b,MXFP4,Qwen Code,95,1140,3,0,0.120,119.101,63031,5,5,passed,accepted_after_feedback_3
+main,gptoss120-erp003-a1,ERP-003,gpt-oss-120b,MXFP4,Qwen Code,277,277,0,0,20.834,113.137,63031,5,5,passed,accepted_without_feedback_with_agent_output_failure
+main,gptoss120-erp004-a1,ERP-004,gpt-oss-120b,MXFP4,Qwen Code,102,102,0,0,20.860,115.541,63031,5,5,passed,accepted_without_feedback
+shell,gptoss120-openhands-erp001-a1,ERP-001,gpt-oss-120b,MXFP4,OpenHands 1.16,130,262,2,1,N/A,N/A,N/A,1,5,passed,accepted_after_feedback
+shell,gptoss120-openhands-erp003-a1,ERP-003,gpt-oss-120b,MXFP4,OpenHands 1.16,71,109,0,1,N/A,N/A,N/A,5,5,passed,accepted_after_hygiene_feedback
+shell,gptoss120-openhands-erp004-a1,ERP-004,gpt-oss-120b,MXFP4,OpenHands 1.16,141,173,0,1,N/A,N/A,N/A,5,5,passed,accepted_after_hygiene_feedback
+reference,codex-erp001-a1,ERP-001,Codex cloud reference,provider-managed,Codex,189,420,1,0,N/A,N/A,N/A,3,5,passed,accepted_after_feedback_1
+reference,codex-erp003-a1,ERP-003,Codex cloud reference,provider-managed,Codex,124,124,0,0,N/A,N/A,N/A,5,5,deferred,accepted_on_review
+reference,codex-erp004-a1,ERP-004,Codex cloud reference,provider-managed,Codex,115,115,0,0,N/A,N/A,N/A,5,5,deferred,accepted_on_review

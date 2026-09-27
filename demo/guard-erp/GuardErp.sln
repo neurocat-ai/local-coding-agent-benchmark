@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuardErp.Api", "src\GuardErp.Api\GuardErp.Api.csproj", "{F6C58833-136D-4A80-9B57-97C6849BA62A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuardErp.Tests", "tests\GuardErp.Tests\GuardErp.Tests.csproj", "{1DAB4387-D677-4712-9E9C-CDB9411B70A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6C58833-136D-4A80-9B57-97C6849BA62A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C58833-136D-4A80-9B57-97C6849BA62A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C58833-136D-4A80-9B57-97C6849BA62A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C58833-136D-4A80-9B57-97C6849BA62A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAB4387-D677-4712-9E9C-CDB9411B70A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAB4387-D677-4712-9E9C-CDB9411B70A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAB4387-D677-4712-9E9C-CDB9411B70A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAB4387-D677-4712-9E9C-CDB9411B70A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

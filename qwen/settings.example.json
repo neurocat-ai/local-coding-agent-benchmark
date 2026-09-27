@@ -1,0 +1,90 @@
+{
+  "$version": 4,
+  "privacy": { "usageStatisticsEnabled": false },
+  "model": { "name": "qwen36-q8" },
+  "modelProviders": {
+    "openai": [
+      {
+        "id": "qwen36-q8",
+        "name": "Local Qwen3.6 35B A3B Q8",
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "envKey": "LOCAL_LLM_API_KEY",
+        "generationConfig": {
+          "timeout": 600000,
+          "maxRetries": 1,
+          "contextWindowSize": 32768,
+          "samplingParams": {
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "reasoning_effort": "medium",
+            "max_tokens": 8192
+          }
+        }
+      },
+      {
+        "id": "gpt-oss-120b",
+        "name": "Local gpt-oss 120B MXFP4",
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "envKey": "LOCAL_LLM_API_KEY",
+        "generationConfig": {
+          "timeout": 600000,
+          "maxRetries": 1,
+          "contextWindowSize": 32768,
+          "samplingParams": {
+            "reasoning_effort": "medium",
+            "max_tokens": 8192
+          }
+        }
+      },
+      {
+        "id": "qwen36-q4",
+        "name": "Local Qwen3.6 35B A3B Q4 control",
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "envKey": "LOCAL_LLM_API_KEY",
+        "generationConfig": {
+          "timeout": 600000,
+          "maxRetries": 1,
+          "contextWindowSize": 32768,
+          "samplingParams": {
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "reasoning_effort": "medium",
+            "max_tokens": 8192
+          }
+        }
+      },
+      {
+        "id": "qwen36-coding-q4",
+        "name": "Local Qwen3.6 35B Coding Q4 control",
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "envKey": "LOCAL_LLM_API_KEY",
+        "generationConfig": {
+          "timeout": 600000,
+          "maxRetries": 1,
+          "contextWindowSize": 32768,
+          "samplingParams": {
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "reasoning_effort": "medium",
+            "max_tokens": 8192
+          }
+        }
+      },
+      {
+        "id": "gpt-oss-20b",
+        "name": "Local gpt-oss 20B MXFP4 efficiency control",
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "envKey": "LOCAL_LLM_API_KEY",
+        "generationConfig": {
+          "timeout": 600000,
+          "maxRetries": 1,
+          "contextWindowSize": 32768,
+          "samplingParams": {
+            "reasoning_effort": "medium",
+            "max_tokens": 8192
+          }
+        }
+      }
+    ]
+  }
+}

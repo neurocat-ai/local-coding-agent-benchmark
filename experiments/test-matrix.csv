@@ -1,0 +1,13 @@
+phase,run_id,model,quantization,reasoning_mode,shell,task,attempt,context,max_output_tokens,time_limit_minutes,status
+main,qwen-q8-erp001-a1,Qwen3.6-35B-A3B,Q8_0,on,Qwen Code,ERP-001,1,32768,8192,60,completed
+main,qwen-q8-erp003-a1,Qwen3.6-35B-A3B,Q8_0,on,Qwen Code,ERP-003,1,32768,8192,60,completed
+main,qwen-q8-erp004-a1,Qwen3.6-35B-A3B,Q8_0,on,Qwen Code,ERP-004,1,32768,8192,60,completed
+main,gptoss120-erp001-a1,gpt-oss-120b,MXFP4,medium,Qwen Code,ERP-001,1,32768,8192,60,completed
+main,gptoss120-erp003-a1,gpt-oss-120b,MXFP4,medium,Qwen Code,ERP-003,1,32768,8192,60,completed
+main,gptoss120-erp004-a1,gpt-oss-120b,MXFP4,medium,Qwen Code,ERP-004,1,32768,8192,60,completed
+shell,gptoss120-openhands-erp001-a1,gpt-oss-120b,MXFP4,medium-requested-not-transmitted,OpenHands 1.16,ERP-001,1,32768,8192,60,completed
+shell,gptoss120-openhands-erp003-a1,gpt-oss-120b,MXFP4,medium-requested-not-transmitted,OpenHands 1.16,ERP-003,1,32768,8192,60,completed
+shell,gptoss120-openhands-erp004-a1,gpt-oss-120b,MXFP4,medium-requested-not-transmitted,OpenHands 1.16,ERP-004,1,32768,8192,60,completed
+reference,codex-erp001-a1,Codex cloud reference,provider-managed,recorded-at-runtime,Codex,ERP-001,1,provider-managed,provider-managed,60,completed
+reference,codex-erp003-a1,Codex cloud reference,provider-managed,recorded-at-runtime,Codex,ERP-003,1,provider-managed,provider-managed,60,completed
+reference,codex-erp004-a1,Codex cloud reference,provider-managed,recorded-at-runtime,Codex,ERP-004,1,provider-managed,provider-managed,60,completed

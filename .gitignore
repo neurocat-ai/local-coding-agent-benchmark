@@ -1,0 +1,13 @@
+.env
+.results/
+.runs/
+artifacts/
+*.pem
+*.key
+*.ppk
+bin/
+obj/
+.idea/
+.vscode/
+.DS_Store
+._*
