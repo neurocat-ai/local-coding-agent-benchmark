@@ -19,6 +19,13 @@ See [results.csv](results.csv) for the compact public dataset and [results.md](d
 
 ## Experiment design
 
+The experiment treats the model and agent runtime as independent axes:
+
+- Models: Qwen3.6-35B-A3B Q8 and gpt-oss-120b MXFP4.
+- Agent runtimes: Qwen Code and OpenHands.
+
+Cloud Codex remains a reference baseline for task quality and workflow comparison.
+
 The test matrix contains 12 primary runs:
 
 | Phase | Model | Quantization | Agent shell | Tasks |
@@ -85,7 +92,9 @@ The command-line contract is documented inside each script. Model downloads, pai
 ## Repository map
 
 - `compose.yaml`: localhost-bound Ollama, OpenHands, PostgreSQL, and test services.
-- `models/`: Ollama model profiles used by the experiment.
+- `models/`: model and inference profiles used by the experiment.
+- `agent-runtimes/qwen-code/`: Qwen Code configuration for running different local models.
+- `agent-runtimes/openhands/`: OpenHands configuration notes; the runtime itself is defined in `compose.yaml`.
 - `scripts/`: run isolation, timing, metrics, evidence capture, and summary generation.
 - `experiments/`: fixed protocol, scoring rubric, matrix, and task prompts.
 - `demo/guard-erp/`: synthetic C# fixture used for the recorded runs.

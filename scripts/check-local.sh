@@ -7,7 +7,7 @@ failed=0
 for command_name in bash curl python3 tar; do
   if ! command -v "$command_name" >/dev/null 2>&1; then echo "MISSING: $command_name"; failed=1; fi
 done
-for path in compose.yaml .env.example qwen/settings.example.json \
+for path in compose.yaml .env.example agent-runtimes/qwen-code/settings.example.json \
   models/qwen36-q8/Modelfile models/qwen36-q4/Modelfile models/qwen36-coding-q4/Modelfile \
   models/gpt-oss-120b/Modelfile models/gpt-oss-20b/Modelfile \
   demo/guard-erp/AGENTS.md demo/guard-erp/TASK.md \
@@ -19,7 +19,7 @@ for path in compose.yaml .env.example qwen/settings.example.json \
   experiments/test-matrix.csv; do
   if [[ ! -f "$path" ]]; then echo "MISSING FILE: $path"; failed=1; fi
 done
-python3 -m json.tool qwen/settings.example.json >/dev/null
+python3 -m json.tool agent-runtimes/qwen-code/settings.example.json >/dev/null
 python3 -m json.tool experiments/review-template.json >/dev/null
 python3 -c 'import ast, pathlib; [ast.parse(pathlib.Path(p).read_text()) for p in ("scripts/build-summary.py", "scripts/benchmark-api.py", "scripts/warm-model.py")]'
 bash -n scripts/*.sh
